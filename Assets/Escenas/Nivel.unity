@@ -557,6 +557,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DataItem
   points: 10
   rotateSpeed: 90
+--- !u!1 &868061996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868061997}
+  m_Layer: 3
+  m_Name: RayOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868061997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868061996}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1890708141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881032481
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +602,7 @@ GameObject:
   - component: {fileID: 881032483}
   - component: {fileID: 881032482}
   m_Layer: 7
-  m_Name: Cube
+  m_Name: puerta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -845,7 +876,8 @@ Transform:
   m_LocalPosition: {x: 458.6, y: 63, z: 498}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 868061997}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1890708142
@@ -860,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c994da85b74f3bc4d84473afe56f57c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  rayOrigin: {fileID: 2114154706}
+  rayOrigin: {fileID: 868061997}
   interactDistance: 4
   interactableLayer:
     serializedVersion: 2
