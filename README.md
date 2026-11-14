@@ -23,6 +23,7 @@ Durante la partida, el jugador debe administrar su supervivencia frente a la pat
 - Puede recoger el **Power-Up de Invisibilidad** para volverse temporalmente indetectable ante los drones y atravesar la zona vigilada.
 - Debe tener cuidado con las **Zonas de Barro**, ya que reducen su velocidad de desplazamiento mientras permanece dentro de ellas.
 - el jugador puede abrir la puerta con 10 puntos pero para obtener la victoria hace falta recolectar todos los datos repartidos por el mapa
+- el jugador se mueve para adelante y para atras, y con 'A' Y 'D' rota la camara para ver el mapa y permite avanzar tocando ambas teclas de avanzar o retroceder
 
 <img width="635" height="316" alt="gameplay 2 pvj" src="https://github.com/user-attachments/assets/8f0579ed-f03c-4525-912d-0401395ca253" />
 
