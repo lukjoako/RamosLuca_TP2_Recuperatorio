@@ -65,6 +65,10 @@ public class PlayerController : MonoBehaviour
 
     private void JumpAndGravity()
     {
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log($"[Salto] Espacio presionado | isGrounded = {isGrounded} | GroundCheck Y = {groundCheck.position.y}");
+        }
         if (isGrounded && velocity.y < 0f)
         {
             velocity.y = -2f;
@@ -76,7 +80,7 @@ public class PlayerController : MonoBehaviour
         }
 
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime);  
     }
 
     public void SetSpeedMultiplier(float multiplier)
