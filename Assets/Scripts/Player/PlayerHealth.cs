@@ -49,4 +49,20 @@ public class PlayerHealth : MonoBehaviour
 
         OnHealthChanged?.Invoke(CurrentHealth, maxHealth);
     }
+    public void ActivateInvisibility(float duration)
+    {
+        StopCoroutine(nameof(InvisibilityRoutine));
+        StartCoroutine(InvisibilityRoutine(duration));
+    }
+
+    private System.Collections.IEnumerator InvisibilityRoutine(float duration)
+    {
+        IsInvisible = true;
+        Debug.Log($"[PowerUp] Invisibilidad activada por {duration} segundos.");
+
+        yield return new WaitForSeconds(duration);
+
+        IsInvisible = false;
+        Debug.Log("[PowerUp] Invisibilidad terminada. La IA vuelve a detectarte.");
+    }
 }
