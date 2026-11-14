@@ -92,8 +92,13 @@ gameplay del juego
 ## Correcciones y Notas
 
 -Me falto hacer un mejor mapa
+
 -los unicos enemigo tienen su ruta ya predefinidas y cuando ya no ven al jugador ignoran las colisiones del mapa
+
 -esta implementado que si se destruye los drones puedan aparecer mas (aunque no hay forma de destruirlo)
+
 -la puerta esta integrada pero de una forma mala en todo el mapa
+
 -las rocas no estaban integradas en el mapa en el terrain ya que me aparecia que el navmesh lo tomaba y no iba a poder cumplir con mi vision del juego de chocarse con las rocas para perder al enemigo
+
 -las estadisticas estan en consola, pero no en el gameplay de pantalla
